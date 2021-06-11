@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".medical.medicalRecord.record.PostMedicalRecordActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#FFFFFF">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:gravity="center"
+            android:text="术后记录"
+            android:textColor="#FFFFFF"
+            android:background="#3da8f5"
+            android:textSize="26sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="个人信息:"
+                android:textSize="50px"
+                />
+
+            <Button
+                android:id="@+id/btn_basicInfo"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:background="#3da8f5"
+                android:layout_marginStart="16dp"
+                android:text="更新个人信息"
+                android:textSize="50px"
+                android:textColor="#FFFFFF"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorPrimary" />
+
+        <!--病情分类-->
+        <LinearLayout
+            android:id="@+id/layout_illSelector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="病情分类:"
+                android:textSize="20sp"
+                android:paddingLeft="10dp"
+                />
+            <TextView
+                android:id="@+id/tx_illSelector"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:text="选择>"
+                android:textSize="15sp"
+                android:paddingRight="15dp"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5px"
+            android:background="@color/colorPrimary" />
+
+        <!--手术日期-->
+        <LinearLayout
+            android:id="@+id/layout_operationDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+            <TextView
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="手术日期:"
+                android:textSize="20sp"
+                android:paddingLeft="10dp"
+                />
+            <TextView
+                android:id="@+id/tx_operationDate"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:text="选择>"
+                android:textSize="15sp"
+                android:paddingRight="15dp"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorPrimary" />
+
+        <!--手术方式-->
+        <LinearLayout
+            android:id="@+id/layout_operationMethod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+            <TextView
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="手术方式:"
+                android:textSize="20sp"
+                android:paddingLeft="10dp"
+                />
+            <TextView
+                android:id="@+id/tx_operationMethod"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:text="选择>"
+                android:textSize="15sp"
+                android:paddingRight="15dp"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorPrimary" />
+
+        <!--
+
+-->
+        <!--隐藏的列表-->
+        <LinearLayout
+            android:id="@+id/layout_gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:visibility="visible"
+            >
+            <!--中央区淋巴转移-->
+            <LinearLayout
+                android:id="@+id/layout_centerLymphMove"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:paddingTop="15dp"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="中央区淋巴转移:"
+                        android:textSize="20sp"
+                        android:paddingLeft="10dp"
+                        />
+                    <RadioGroup
+                        android:id="@+id/radio_centerLymphMove"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:paddingTop="15dp"
+                        android:paddingRight="15dp"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/radio_true_centerLymphMove"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="是" />
+                        <RadioButton
+                            android:id="@+id/radio_false_centerLymphMove"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="否" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:gravity="center_vertical"
+                        android:text="转移数目:"
+                        android:textSize="20sp"
+                        android:paddingLeft="10dp"
+                        />
+                    <EditText
+                        android:id="@+id/edit_centerLymphMove"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorPrimary" />
+
+            <!--颈侧区淋巴结转移-->
+            <LinearLayout
+                android:id="@+id/layout_neckLymphMove"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:paddingTop="15dp"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="颈侧区淋巴结转移:"
+                        android:textSize="20sp"
+                        android:paddingLeft="10dp"
+                        />
+                    <RadioGroup
+                        android:id="@+id/radio_neckLymphMove"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:paddingTop="15dp"
+                        android:paddingRight="15dp"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/radio_true_neckLymphMove"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="是" />
+                        <RadioButton
+                            android:id="@+id/radio_false_neckLymphMove"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="否" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:gravity="center_vertical"
+                        android:text="转移数目:"
+                        android:textSize="20sp"
+                        android:paddingLeft="10dp"
+                        />
+                    <EditText
+                        android:id="@+id/edit_neckLymphMove"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorPrimary" />
+
+            <!--远处转移-->
+            <LinearLayout
+                android:id="@+id/layout_distantMove"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+                <TextView
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="远处转移:"
+                    android:textSize="20sp"
+                    android:paddingLeft="10dp"
+                    />
+                <RadioGroup
+                    android:id="@+id/radio_distantMove"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:paddingRight="15dp"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/radio_bone_distantMove"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="骨转移" />
+                    <RadioButton
+                        android:id="@+id/radio_lung_distantMove"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="肺转移" />
+                    <RadioButton
+                        android:id="@+id/radio_brain_distantMove"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="脑转移" />
+                    <RadioButton
+                        android:id="@+id/radio_noMove"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="无" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorPrimary" />
+
+            <!--TNM分期-->
+            <LinearLayout
+                android:id="@+id/layout_TNM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+                <TextView
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="TNM分期:"
+                    android:textSize="20sp"
+                    android:paddingLeft="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tx_TNM"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="15dp"
+                    android:text="选择>"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorPrimary" />
+
+            <!--DTC复发风险分层-->
+            <LinearLayout
+                android:id="@+id/layout_DTC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:text="DTC复发风险层:"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/tx_DTC"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text="选择>"
+                    android:textSize="15sp"
+                    android:paddingRight="15dp"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorPrimary" />
+
+            <!--副作用风险分层-->
+            <LinearLayout
+                android:id="@+id/layout_negative_risk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:text="副作用风险分层:"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/tx_negative_risk"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text="选择>"
+                    android:textSize="15sp"
+                    android:paddingRight="15dp"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorPrimary" />
+
+            <!--I131治疗-->
+            <LinearLayout
+                android:id="@+id/layout_I131treat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:text="I131治疗:"
+                    android:textSize="20sp" />
+                <RadioGroup
+                    android:id="@+id/radio_I131treat"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:paddingRight="15dp"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/radio_true_I131treat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="是" />
+                    <RadioButton
+                        android:id="@+id/radio_false_I131treat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="否" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorPrimary" />
+
+            <!--4.1 治疗手段-->
+            <LinearLayout
+                android:id="@+id/layout_treatMethod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:text="治疗手段:"
+                    android:textSize="20sp" />
+                <RadioGroup
+                    android:id="@+id/radio_treatMethod"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:paddingRight="15dp"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/radio_true_treatMethod"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="手术" />
+                    <RadioButton
+                        android:id="@+id/radio_false_treatMethod"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="非手术" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorPrimary" />
+
+            <!--4.2 术后治疗手段-->
+            <LinearLayout
+                android:id="@+id/layout_AfterThreatMethod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:text="术后治疗手段:"
+                    android:textSize="20sp" />
+                <RadioGroup
+                    android:id="@+id/radio_AfterThreatMethod"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:paddingRight="15dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <RadioButton
+                            android:id="@+id/radio_chemoTreat_AfterThreatMethod"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="化疗" />
+                        <RadioButton
+                            android:id="@+id/radio_targetedTreat_AfterThreatMethod"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="靶向治疗" />
+
+                        <RadioButton
+                            android:id="@+id/radio_radioTreat_AfterThreatMethod"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="放疗" />
+                    </LinearLayout>
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorPrimary" />
+
+            <!--4.3 甲状腺素抑制治疗-->
+            <LinearLayout
+                android:id="@+id/layout_thyroidRestrainTreat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:text="甲状腺素TSH抑制治疗:"
+                    android:textSize="20sp" />
+                <RadioGroup
+                    android:id="@+id/radio_thyroidRestrainTreat"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:paddingRight="15dp"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/radio_true_thyroidRestrainTreat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="是" />
+                    <RadioButton
+                        android:id="@+id/radio_false_thyroidRestrainTreat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="否" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorPrimary" />
+
+            <!--首次就诊时间-->
+            <LinearLayout
+                android:id="@+id/layout_firstTreatDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+                <TextView
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="首次就诊时间:"
+                    android:textSize="20sp"
+                    android:paddingLeft="10dp"
+                    />
+                <TextView
+                    android:id="@+id/tx_firstTreatDate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text="选择>"
+                    android:textSize="15sp"
+                    android:paddingRight="15dp"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorPrimary" />
+
+            <!--首次诊断-->
+            <LinearLayout
+                android:id="@+id/layout_firstTreat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+                <TextView
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="首次诊断:"
+                    android:textSize="20sp"
+                    android:paddingLeft="10dp"
+                    />
+                <TextView
+                    android:id="@+id/tx_firstTreat"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text="选择>"
+                    android:textSize="15sp"
+                    android:paddingRight="15dp"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorPrimary" />
+
+            <!--首次就诊时间-->
+            <LinearLayout
+                android:id="@+id/layout_ThisTreatDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+                <TextView
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="本次就诊时间:"
+                    android:textSize="20sp"
+                    android:paddingLeft="10dp"
+                    />
+                <TextView
+                    android:id="@+id/tx_ThisTreatDate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text="选择>"
+                    android:textSize="15sp"
+                    android:paddingRight="15dp"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorPrimary" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_record_sure"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:text="保 存"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_gravity="right"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/shape"
+            />
+    </LinearLayout>
+</ScrollView>

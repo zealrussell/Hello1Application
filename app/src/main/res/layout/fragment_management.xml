@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:orientation="vertical"
+    android:background="#DDDDDD"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/management_fragment"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            layout="@layout/view_yop"
+            android:id="@+id/great">
+        </include>
+
+        <LinearLayout
+            android:background="#ffffff"
+            android:id="@+id/layout_personalInfo"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_marginBottom="17dip"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:focusable="true"
+            android:focusableInTouchMode="false"
+            android:padding="7dip">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/pim"/>
+            <TextView
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="个人信息"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#DDDDDD"/>
+        <LinearLayout
+            android:background="#ffffff"
+            android:id="@+id/layout_pre_operation_record"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_marginBottom="17dip"
+            android:focusable="true"
+            android:focusableInTouchMode="false"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:padding="7dip">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/pre_operation"/>
+            <TextView
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="术前记录"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#DDDDDD"/>
+
+        <!--
+        <include layout="@layout/kanyikan">
+        </include>-->
+
+        <LinearLayout
+            android:background="#ffffff"
+            android:id="@+id/layout_post_operation_record"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_marginBottom="17dip"
+            android:focusable="true"
+            android:focusableInTouchMode="false"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:padding="7dip">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/post_operation"/>
+            <TextView
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="术后记录"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:background="#ffffff"
+            android:id="@+id/layout_index_record"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_marginBottom="17dip"
+            android:focusable="true"
+            android:focusableInTouchMode="false"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:padding="7dip">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/index_record"/>
+            <TextView
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="指标记录"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#DDDDDD"/>
+        <LinearLayout
+            android:background="#ffffff"
+            android:id="@+id/layout_resourceDB"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_marginBottom="17dip"
+            android:focusable="true"
+            android:focusableInTouchMode="false"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:padding="7dip">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/resource"/>
+            <TextView
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="资料库（病历、彩超上传）"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:background="#ffffff"
+            android:id="@+id/layout_review_ablationOfBenignNodules"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_marginBottom="17dip"
+            android:focusable="true"
+            android:focusableInTouchMode="false"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:padding="7dip">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/benign_tumor"/>
+            <TextView
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="甲状腺良性结节消融术后复查专区"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_drugDosage_review"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_marginBottom="17dip"
+            android:focusable="true"
+            android:focusableInTouchMode="false"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:background="#B8D8E1"
+            android:padding="7dip">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/medical_report"/>
+            <TextView
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用药与复查报告"/>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:gravity="bottom"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="甲优美 © 南京理工大学 · 郑州大学第一附属医院"
+                android:textSize="15sp"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

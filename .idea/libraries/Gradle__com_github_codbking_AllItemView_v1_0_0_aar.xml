@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.codbking:AllItemView:v1.0.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1ca8a5311dfebd7703fcd9b7ab7473a4/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1ca8a5311dfebd7703fcd9b7ab7473a4/jars/classes.jar!/" />
+      <root url="file://D:/Android/.gradle/caches/transforms-2/files-2.1/c24cc7eb3a2155cd60d975377c38af38/jetified-AllItemView-v1.0.0/res" />
+      <root url="file://D:/Android/.gradle/caches/transforms-2/files-2.1/c24cc7eb3a2155cd60d975377c38af38/jetified-AllItemView-v1.0.0/AndroidManifest.xml" />
+      <root url="jar://D:/Android/.gradle/caches/transforms-2/files-2.1/c24cc7eb3a2155cd60d975377c38af38/jetified-AllItemView-v1.0.0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

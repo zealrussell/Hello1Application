@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: com.tencent.map.geolocation:TencentLocationSdk-openplatform:7.2.6@aar">
+    <CLASSES>
+      <root url="file://D:/Android/.gradle/caches/transforms-2/files-2.1/5224dac658fb238bdbbf7777bd6c1463/jetified-TencentLocationSdk-openplatform-7.2.6/res" />
+      <root url="file://D:/Android/.gradle/caches/transforms-2/files-2.1/b75770dc25c9787e4fd50eae4f073700/jetified-TencentLocationSdk-openplatform-7.2.6/AndroidManifest.xml" />
+      <root url="jar://D:/Android/.gradle/caches/transforms-2/files-2.1/b75770dc25c9787e4fd50eae4f073700/jetified-TencentLocationSdk-openplatform-7.2.6/jars/classes.jar!/" />
+      <root url="file://D:/Android/.gradle/caches/transforms-2/files-2.1/b75770dc25c9787e4fd50eae4f073700/jetified-TencentLocationSdk-openplatform-7.2.6/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/Android/.gradle/caches/modules-2/files-2.1/com.tencent.map.geolocation/TencentLocationSdk-openplatform/7.2.6/6ebf234085fb0778a85d889006884c8b0359d192/TencentLocationSdk-openplatform-7.2.6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/Android/.gradle/caches/modules-2/files-2.1/com.tencent.map.geolocation/TencentLocationSdk-openplatform/7.2.6/6ebf234085fb0778a85d889006884c8b0359d192/TencentLocationSdk-openplatform-7.2.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

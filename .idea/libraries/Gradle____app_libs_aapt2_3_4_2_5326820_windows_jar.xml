@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: ./app/libs/aapt2-3.4.2-5326820-windows.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/aapt2-3.4.2-5326820-windows.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

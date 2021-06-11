@@ -1,0 +1,46 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        //add
+        maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+
+        google()
+        jcenter()
+        
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.1.1'
+
+        //pickTime add
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.0'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+
+        //wfc
+        classpath 'com.jakewharton:butterknife-gradle-plugin:10.2.1'
+    }
+}
+
+allprojects {
+    repositories {
+        //add
+        maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+
+        google()
+        jcenter()
+
+        //add
+        mavenCentral()
+        mavenLocal()
+
+        //picktime add
+        maven { url 'https://jitpack.io' }
+        maven {url 'http://developer.huawei.com/repo'}
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

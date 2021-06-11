@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: artifacts:avenginekit:unspecified">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/avenginekit/build/.transforms/4772eeb036b2f6dcb6ef2e500c09b5a7/jetified-avenginekit/res" />
+      <root url="jar://$PROJECT_DIR$/avenginekit/build/.transforms/4772eeb036b2f6dcb6ef2e500c09b5a7/jetified-avenginekit/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/avenginekit/build/.transforms/4772eeb036b2f6dcb6ef2e500c09b5a7/jetified-avenginekit/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

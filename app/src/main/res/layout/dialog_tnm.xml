@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".medical.medicalRecord.record.PostMedicalRecordActivity"
+    android:background="#FFFFFF"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+        <!--T最大肿瘤大小-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginTop="5dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/tnm_T"
+                android:textSize="20sp"
+                android:layout_marginBottom="10dp"
+                />
+
+            <RadioGroup
+                android:id="@+id/radio_tnm_T"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:orientation="vertical">
+                <RadioButton
+                    android:id="@+id/radio_tnm_t1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_tnm_t1"
+                    android:textSize="@dimen/tnm_text"
+                    />
+                <RadioButton
+                    android:id="@+id/radio_tnm_t1a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="T1a：肿瘤最大径≤1cm"
+                    android:textSize="@dimen/tnm_text"
+                    />
+                <RadioButton
+                    android:id="@+id/radio_tnm_t1b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="T1b：肿瘤最大径＞1cm，≤2cm"
+                    android:textSize="@dimen/tnm_text"
+                    />
+                <RadioButton
+                    android:id="@+id/radio_tnm_t2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="T2：肿瘤 2～4cm"
+                    android:textSize="@dimen/tnm_text"/>
+                <RadioButton
+                    android:id="@+id/radio_tnm_t3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="T3：肿瘤>4cm，局限于甲状腺内或大体侵犯甲状腺外带状肌"
+                    android:textSize="@dimen/tnm_text"/>
+                <RadioButton
+                    android:id="@+id/radio_tnm_t4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="T4：大体侵犯甲状腺外带状肌外"
+                    android:textSize="@dimen/tnm_text"/>
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5px"
+            android:background="#959595" />
+
+        <!--N淋巴结-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="N 淋巴结："
+                android:textSize="60px"
+                android:layout_marginBottom="10dp"
+                />
+            <RadioGroup
+                android:id="@+id/radio_tnm_N"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:orientation="vertical">
+                <RadioButton
+                    android:id="@+id/radio_tnm_n0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="N0：无淋巴结转移证据"
+                    android:textSize="@dimen/tnm_text"/>
+                <RadioButton
+                    android:id="@+id/radio_tnm_n1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="N1：区域淋巴结转移"
+                    android:textSize="@dimen/tnm_text"/>
+                <RadioButton
+                    android:id="@+id/radio_tnm_n1a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="N1a：转移至Ⅵ、Ⅶ区（包括气管旁、气管前、喉前/Delphian 或上纵隔）淋巴结，可以为单侧或双侧。"
+                    android:textSize="@dimen/tnm_text"/>
+                <RadioButton
+                    android:id="@+id/radio_tnm_pN1b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="pN1b：单侧、双侧或对侧颈淋巴结转移（包括Ⅰ、Ⅱ、Ⅲ、Ⅳ或Ⅴ区）淋巴结或咽 后淋巴结转移。"
+                    android:textSize="@dimen/tnm_text"/>
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5px"
+            android:background="#959595" />
+
+        <!--M 远处转移:-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="M 远处转移:"
+                    android:textSize="60px"
+                    android:layout_marginBottom="10dp"
+                    />
+                <RadioGroup
+                    android:id="@+id/radio_tnm_M"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <RadioButton
+                        android:id="@+id/radio_tnm_m_true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="是"
+                        android:textSize="@dimen/tnm_text"/>
+                    <RadioButton
+                        android:id="@+id/radio_tnm_m_false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="否"
+                        android:textSize="@dimen/tnm_text"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_tnm_sure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:layout_marginRight="20dp"
+                android:text="确 定"
+                android:textSize="@dimen/tnm_text"
+                />
+        </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

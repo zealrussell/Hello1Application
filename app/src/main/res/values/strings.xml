@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">Hello1Application</string>
+    <string name="tnm_T">T 最大肿瘤大小（）cm：</string>
+    <string name="radio_tnm_t1">T1：肿瘤局限在甲状腺内，最大径≤2cm</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+
+    <string name="title_activity_bottom">BottomActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">管家</string>
+    <string name="title_notifications">消息</string>
+    <string name="title_personalCental">我</string>
+    <string name="title_homepage">主页</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="tttttt">促甲状腺素</string>
+    <string name="ttt">偏高</string>
+
+    <!--DTC复发风险层-->
+    <string name="dtc_lowSick1">① 无局部或远处转移</string>
+    <string name="dtc_lowSick2">② 所有肉眼所见的肿瘤均被彻底清除</string>
+    <string name="dtc_lowSick3">③ 肿瘤没有侵犯周围组织</string>
+    <string name="dtc_lowSick4">④ 肿瘤不是侵袭型的组织学亚型，并且没有血管侵犯 </string>
+    <string name="dtc_lowSick5">⑤ 如果该患者清除术后残留甲状腺组织(简称清甲) 后全身B1I显像，甲状腺床以外没有发现碘摄取</string>
+    <string name="dtc_intermediateRisk1">⑥ 初次手术后病理检查可存镜下发现肿瘤有甲状腺周围软组织侵犯</string>
+    <string name="dtc_intermediateRisk2">⑦ 有颈淋巴结转移或清甲后行伞身”1I显像发现有异常放射性摄取</string>
+    <string name="dtc_intermediateRisk3">⑧ 肿瘤为侵袭型的组织学类型．或有血管侵犯</string>
+    <string name="dtc_highRisk1">⑨ 明显侵犯甲状腺周围软组织</string>
+    <string name="dtc_highRisk2">⑩ 肉眼下可见肿瘤侵犯周同组织或器官</string>
+    <string name="dtc_highRisk3">⑪ 肿瘤未能完整切除，术中有残留</string>
+    <string name="dtc_highRisk4">⑫ 伴有远处转移</string>
+    <string name="dtc_highRisk5">⑬ 全甲状腺切除后，血清豫水平仍较高</string>
+    <string name="dtc_highRisk6">⑭ 有甲状腺癌家族史</string>
+
+    <!--副作用风险层-->
+    <string name="sideEffect_lowSick1">① 中青年（小于等于39岁）</string>
+    <string name="sideEffect_lowSick2">② 无症状者或无合并疾病</string>
+    <string name="sideEffect_lowSick3">③ 无心血管疾病</string>
+    <string name="sideEffect_lowSick4">④ 无肾上腺素能受体激动的症状或体征</string>
+    <string name="sideEffect_lowSick5">⑤ 无心血管疾病危险因素</string>
+    <string name="sideEffect_lowSick6">⑥ 绝经前妇女</string>
+    <string name="sideEffect_lowSick7">⑦ 骨密度正常</string>
+    <string name="sideEffect_lowSick8">⑧ 无OP的危险因素</string>
+    <string name="sideEffect_intermediateRisk1">⑨ 中年（35至59岁）存在骨质疏松的危险因素</string>
+    <string name="sideEffect_intermediateRisk2">⑩ 存在骨质疏松的危险因素</string>
+    <string name="sideEffect_intermediateRisk3">⑪ 高血压</string>
+    <string name="sideEffect_intermediateRisk4">⑫ 有肾上腺素能受体激动的症状或体征</string>
+    <string name="sideEffect_intermediateRisk5">⑬ 吸烟</string>
+    <string name="sideEffect_intermediateRisk6">⑭ 存在心血管疾病危险因素或</string>
+    <string name="sideEffect_intermediateRisk7">⑮ 围绝经期妇女</string>
+    <string name="sideEffect_intermediateRisk8">⑯ 骨量减少</string>
+    <string name="sideEffect_highRisk1">⑰ 临床心脏病</string>
+    <string name="sideEffect_highRisk2">⑱ 老年（大于等于60岁）</string>
+    <string name="sideEffect_highRisk3">⑲ 绝经后妇女</string>
+    <string name="sideEffect_highRisk4">⑳ 伴发其他严重疾病</string>
+
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <string name="matter_attention">注意事项</string>
+    <string name="matter_attention1">• 早餐前空腹顿服最利于维持稳定的 TSH 水平 </string>
+    <string name="matter_attention2">• 如有漏服,应服用双倍剂量,直至补足全部漏服剂量</string>
+    <string name="matter_attention3">• 部分患者需要根据冬夏季节 TSH 水平的变化调整 L-T4 用量(冬增夏减)</string>
+    <string name="matter_attention4">• 应在间隔足够时间后服用某些特殊药物或食物:与维生素、滋补品间隔 1 小时;与含铁、钙食物或药物间隔 2 小时</string>
+    <string name="matter_attention5">• 与奶、豆类食品间隔 4 小时</string>
+    <string name="matter_attention6">• 与消胆胺或降脂树脂间隔 12 小时</string>
+    <string name="matter_attention7">• 每次调整 L-T4剂量后 4 周左右(年长者较久),TSH 可渐达稳 4态</string>
+    <string name="matter_attention8">• 妊娠期间切不可盲目停药</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+
+    <!-- wfc -->
+<!--    <string name="app_name">交流平台</string>-->
+
+    <!--我-->
+    <string name="my_chat_account">账号:%1$s</string>
+    <string name="setting">设置</string>
+
+    <!--设置-->
+    <string name="new_message_remind">新消息提醒</string>
+    <string name="exit">退出登录</string>
+
+    <!--关于-->
+    <string name="app_name_in_about">交流平台</string>
+    <string name="function_introduction">功能介绍</string>
+    <string name="complaint">投诉</string>
+    <string name="check_update">检查更新</string>
+    <string name="terms_of_use_and_privacy_policy">使用条款和隐私政策</string>
+    <string name="name">交流平台</string>
+    <string name="slogan">呵护你我她</string>
+</resources>

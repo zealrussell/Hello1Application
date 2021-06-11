@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Hello1Application.iml" filepath="$PROJECT_DIR$/Hello1Application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Hello1Application.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Hello1Application.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/avenginekit/Hello1Application.avenginekit.iml" filepath="$PROJECT_DIR$/.idea/modules/avenginekit/Hello1Application.avenginekit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/client/Hello1Application.client.iml" filepath="$PROJECT_DIR$/.idea/modules/client/Hello1Application.client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/emojilibrary/Hello1Application.emojilibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/emojilibrary/Hello1Application.emojilibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/imagepicker/Hello1Application.imagepicker.iml" filepath="$PROJECT_DIR$/.idea/modules/imagepicker/Hello1Application.imagepicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mars-core-release/Hello1Application.mars-core-release.iml" filepath="$PROJECT_DIR$/.idea/modules/mars-core-release/Hello1Application.mars-core-release.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mylibrary/Hello1Application.mylibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/mylibrary/Hello1Application.mylibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/push/Hello1Application.push.iml" filepath="$PROJECT_DIR$/.idea/modules/push/Hello1Application.push.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/uikit/Hello1Application.uikit.iml" filepath="$PROJECT_DIR$/.idea/modules/uikit/Hello1Application.uikit.iml" />
+    </modules>
+  </component>
+</project>

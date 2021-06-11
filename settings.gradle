@@ -1,0 +1,8 @@
+include ':push'
+include ':mars-core-release'
+include ':imagepicker'
+include ':avenginekit'
+include ':client'
+include ':emojilibrary'
+include ':uikit'
+include ':app', ':mylibrary'

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: artifacts:mars-core-release:unspecified">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/mars-core-release/build/.transforms/391c91d6f43c56c202c85ee50ec78c24/jetified-mars-core-release/res" />
+      <root url="file://$PROJECT_DIR$/mars-core-release/build/.transforms/c1f5db50e1dc5c0ea26e7795249ad6f3/jetified-mars-core-release/res" />
+      <root url="file://$PROJECT_DIR$/mars-core-release/build/.transforms/c1f5db50e1dc5c0ea26e7795249ad6f3/jetified-mars-core-release/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/mars-core-release/build/.transforms/c1f5db50e1dc5c0ea26e7795249ad6f3/jetified-mars-core-release/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

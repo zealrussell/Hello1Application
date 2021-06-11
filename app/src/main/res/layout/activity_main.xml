@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/btn_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="dialog入口"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_Entrance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="entrance入口"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_BasicInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="basicInfo入口"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_index_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="index_details入口"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_bottomActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="bottom入口"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_fullscreenActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="fullscreen入口"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_rulerViewActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="r入口"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_bottomDialogActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="bottomDialog入口"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_loginActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="login入口"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_reportDetailActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="reportDetail入口"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_preMedicalActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="btn_preMedicalActivity"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_fragmentAAA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="btn_fragmentAAA"
+        android:textAllCaps="false" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/yellow" >
+
+        <TextView
+            android:id="@+id/picture_text"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="picture"
+            android:textStyle="bold"
+            android:textColor="@color/colorGreen"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/movie_text"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="movie"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/music_text"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="music"
+            android:textStyle="bold"
+            android:textColor="@color/colorRed"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:background="@color/colorGreen"
+        >
+
+        <ImageView
+            android:id="@+id/cursor"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="matrix"
+            android:src="@color/colorPrimary" />
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorAccent"/>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vPager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:background="@color/white"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+    <Button
+        android:id="@+id/btn_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="fragment入口"
+        android:textAllCaps="false" />
+
+</LinearLayout>

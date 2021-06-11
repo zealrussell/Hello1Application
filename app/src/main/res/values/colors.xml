@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3da8f5</color>
+    <color name="colorPrimaryDark">#3da8f5</color>
+    <color name="colorAccent">#1D7FC0</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="yellow">#f7d321</color>
+    <color name="age_text">#777777</color>
+    <color name="white">#ffffff</color>
+
+    <color name="colorRed">#F95657</color>
+    <color name="colorLine">#F2F2F2</color>
+    <color name="colorGreen">#63CD75</color>
+    <color name="colorBlack">#333333</color>
+</resources>

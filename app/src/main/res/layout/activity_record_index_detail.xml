@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".medical.quota.reportDetail.RecordIndexDetailActivity"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:gravity="center"
+        android:text="记录指标"
+        android:textColor="#FFFFFF"
+        android:background="#3da8f5"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/tv_recordIndex_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="甲状腺"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        />
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/line_linear"
+        >
+
+        <com.example.hello1application.medical.quota.ruleViewDemo.RulerView
+            android:id="@+id/rulerView_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="130dp" />
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您的指标值"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginBottom="10dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="70dp"
+            >
+            <EditText
+                android:id="@+id/et_index"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:maxLines = "2"
+                android:layout_gravity="center"
+                android:background="@drawable/font_shape"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                />
+            <Spinner
+                android:id="@+id/spinner_index_unit"
+                android:layout_marginTop="10dp"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:entries="@array/index_unit_select"
+                android:spinnerMode="dropdown"
+                android:popupBackground="#FFFFFF"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="参考值"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginBottom="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="120dp"
+            >
+            <EditText
+                android:id="@+id/et_minIndex"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:maxLines = "2"
+                android:background="@drawable/font_shape"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="~"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                />
+            <EditText
+                android:id="@+id/et_maxIndex"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:maxLines = "2"
+                android:background="@drawable/font_shape"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_shadow"
+        android:id="@+id/btn_assayDate"
+        android:text="请选择化验日期"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_shadow"
+        android:id="@+id/btn_recordConfirm"
+        android:text="确定"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="right"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        />
+
+
+</LinearLayout>
