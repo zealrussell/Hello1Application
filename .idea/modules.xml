@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/imagepicker/Hello1Application.imagepicker.iml" filepath="$PROJECT_DIR$/.idea/modules/imagepicker/Hello1Application.imagepicker.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/mars-core-release/Hello1Application.mars-core-release.iml" filepath="$PROJECT_DIR$/.idea/modules/mars-core-release/Hello1Application.mars-core-release.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/mylibrary/Hello1Application.mylibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/mylibrary/Hello1Application.mylibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ocr_ui/Hello1Application.ocr_ui.iml" filepath="$PROJECT_DIR$/.idea/modules/ocr_ui/Hello1Application.ocr_ui.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/push/Hello1Application.push.iml" filepath="$PROJECT_DIR$/.idea/modules/push/Hello1Application.push.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/uikit/Hello1Application.uikit.iml" filepath="$PROJECT_DIR$/.idea/modules/uikit/Hello1Application.uikit.iml" />
     </modules>

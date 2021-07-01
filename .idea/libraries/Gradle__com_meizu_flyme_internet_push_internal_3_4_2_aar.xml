@@ -4,6 +4,9 @@
       <root url="jar://D:/Android/.gradle/caches/transforms-2/files-2.1/ff4e4eafedabc7e4169d3dee5089f979/jetified-push-internal-3.4.2/jars/classes.jar!/" />
       <root url="file://D:/Android/.gradle/caches/transforms-2/files-2.1/ff4e4eafedabc7e4169d3dee5089f979/jetified-push-internal-3.4.2/AndroidManifest.xml" />
       <root url="file://D:/Android/.gradle/caches/transforms-2/files-2.1/ff4e4eafedabc7e4169d3dee5089f979/jetified-push-internal-3.4.2/res" />
+      <root url="file://D:/Android/.gradle/caches/transforms-2/files-2.1/e4ca8e7f0191340443a73378efb9fffe/jetified-push-internal-3.4.2/res" />
+      <root url="jar://D:/Android/.gradle/caches/transforms-2/files-2.1/e4ca8e7f0191340443a73378efb9fffe/jetified-push-internal-3.4.2/jars/classes.jar!/" />
+      <root url="file://D:/Android/.gradle/caches/transforms-2/files-2.1/e4ca8e7f0191340443a73378efb9fffe/jetified-push-internal-3.4.2/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://D:/Android/.gradle/caches/modules-2/files-2.1/com.meizu.flyme.internet/push-internal/3.4.2/fb9e9e8e6482e46dbf0e6d0f79d6702ca42dfb0f/push-internal-3.4.2-javadoc.jar!/" />

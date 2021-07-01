@@ -25,7 +25,7 @@ public class BaseApp extends MultiDexApplication{
     }
 
     public static void setContext(Context mContext) {
-        com.example.hello1application.chat.BaseApp.mContext = mContext;
+        BaseApp.mContext = mContext;
     }
 
     public static long getMainThreadId() {

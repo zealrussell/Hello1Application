@@ -8,6 +8,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.hello1application.chat.main.SplashActivity;
 import com.example.hello1application.common.pay.OrderDetailsViewActivity;
 import com.example.hello1application.medical.medicalRecord.calculateDosage.DosageReviewActivity;
 import com.example.hello1application.medical.quota.reportDetail.RecordIndexDetailActivity;
@@ -80,7 +81,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_rulerView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, LoginActivity.class); //从 A类 跳转到 B类
+                Intent intent = new Intent(MainActivity.this, SplashActivity.class); //从 A类 跳转到 B类
                 startActivity(intent);
             }
         });

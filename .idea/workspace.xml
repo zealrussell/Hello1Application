@@ -6,7 +6,8 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="ocr" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="AvailableLibraryUpdateStorage">
@@ -32,20 +33,364 @@
     </library-updates>
     <last-search-timestamp>1583494734836</last-search-timestamp>
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="1cc88c35-ac62-4401-9f57-796d67845557" name="Default Changelist" comment="update">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/libs/gson-2.8.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/hello1application/medical/ManagementFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/hello1application/medical/medicalRecord/dialogUtils/DTC.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/gouwu.xml" beforeDir="false" />
+    <list default="true" id="1cc88c35-ac62-4401-9f57-796d67845557" name="Default Changelist" comment="ocr and im">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle____app_libs_ocr_sdk_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle____ocr_ui_libs_license_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_core_3_1_0_alpha3_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_idling_resource_3_1_0_alpha3_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_monitor_1_1_0_alpha3_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_runner_1_1_0_alpha3_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_animated_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/ocr_ui/Hello1Application.ocr_ui.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/ocr-sdk.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/hello1application/OCRActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/hello1application/RecognizeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/jniLibs/arm64-v8a/libocr-sdk.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/jniLibs/armeabi-v7a/libocr-sdk.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/jniLibs/armeabi/libocr-sdk.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/jniLibs/x86/libocr-sdk.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_ocr.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/.transforms/27ef3c66a508ac827d7b554741f426a7.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/.transforms/27ef3c66a508ac827d7b554741f426a7/classes/classes.dex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/.transforms/f6e0c77bd947b7dae1519245dc4fe661.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/.transforms/f6e0c77bd947b7dae1519245dc4fe661/classes/classes.dex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/generated/source/buildConfig/debug/com/baidu/ocr/ui/BuildConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/output-metadata.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/aar_libs_directory/debug/libs/license.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/aar_main_jar/debug/classes.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/aar_metadata/debug/aar-metadata.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/annotation_processor_list/debug/annotationProcessors.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/annotations_typedef_file/debug/typedefs.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/annotations_zip/debug/annotations.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compile_library_classes_jar/debug/classes.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compile_r_class_jar/debug/R.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compile_symbol_list/debug/R.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_cancel.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_close.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_confirm.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_gallery.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_hint_align_bank_card.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_hint_align_id_card.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_hint_align_id_card_back.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_id_card_locator_back.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_id_card_locator_front.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_light_off.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_light_on.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_passport_locator.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_reset.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_rotate.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_round_corner.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_take_photo_highlight.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_take_photo_normal.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/drawable-xhdpi-v4_bd_ocr_take_photo_selector.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/layout_bd_ocr_activity_camera.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/layout_bd_ocr_confirm_result.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/layout_bd_ocr_crop.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/layout_bd_ocr_take_picture.xml.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/mipmap-hdpi-v4_ic_launcher.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/mipmap-mdpi-v4_ic_launcher.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/mipmap-xhdpi-v4_ic_launcher.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/mipmap-xxhdpi-v4_ic_launcher.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/compiled_local_resources/debug/out/mipmap-xxxhdpi-v4_ic_launcher.png.flat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/incremental/debug-mergeJavaRes/merge-state" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/9GxpX3gg81Hi5FtL5B4nyLmJqdI=" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/incremental/debug-mergeNativeLibs/merge-state" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/incremental/mergeDebugShaders/merger.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/incremental/packageDebugAssets/merger.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/incremental/packageDebugResources/merged.dir/values/values.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/incremental/packageDebugResources/merger.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/idcardquality/IDcardQualityProcess.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/BuildConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/Camera1Control$1$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/Camera1Control$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/Camera1Control$2$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/Camera1Control$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/Camera1Control$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/Camera1Control$4$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/Camera1Control$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/Camera1Control$5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/Camera1Control$PreviewView.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/Camera1Control.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/Camera2Control$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/Camera2Control$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/Camera2Control$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/Camera2Control$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/Camera2Control$5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/Camera2Control$6.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/Camera2Control$7.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/Camera2Control.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/CameraActivity$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/CameraActivity$10.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/CameraActivity$11.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/CameraActivity$12.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/CameraActivity$13.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/CameraActivity$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/CameraActivity$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/CameraActivity$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/CameraActivity$5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/CameraActivity$6$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/CameraActivity$6.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/CameraActivity$7$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/CameraActivity$7.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/CameraActivity$8.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/CameraActivity$9.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/CameraActivity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/CameraNativeHelper$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/CameraNativeHelper$CameraNativeInitCallback.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/CameraNativeHelper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/CameraThreadPool$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/CameraThreadPool.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/CameraView$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/CameraView$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/CameraView$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/CameraView$CameraViewTakePictureCallback$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/CameraView$CameraViewTakePictureCallback.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/CameraView$OnTakePictureCallback.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/CameraView$Orientation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/CameraView.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/ICameraControl$FlashMode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/ICameraControl$OnDetectPictureCallback.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/ICameraControl$OnTakePictureCallback.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/ICameraControl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/MaskView$MaskType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/MaskView.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/OCRCameraLayout.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/OCRFrameLayout.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/camera/PermissionCallback.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/crop/CropView$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/crop/CropView$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/crop/CropView.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/crop/FrameOverlayView$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/crop/FrameOverlayView$OnFrameChangeListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/crop/FrameOverlayView.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/util/DimensionUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/javac/debug/classes/com/baidu/ocr/ui/util/ImageUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/library_and_local_jars_jni/debug/jni/arm64-v8a/libidcard_quality.1.1.1.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/library_and_local_jars_jni/debug/jni/arm64-v8a/libidl_license.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/library_and_local_jars_jni/debug/jni/armeabi-v7a/libidcard_quality.1.1.1.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/library_and_local_jars_jni/debug/jni/armeabi-v7a/libidl_license.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/library_and_local_jars_jni/debug/jni/armeabi/libidcard_quality.1.1.1.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/library_and_local_jars_jni/debug/jni/armeabi/libidl_license.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/library_and_local_jars_jni/debug/jni/x86/libidcard_quality.1.1.1.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/library_and_local_jars_jni/debug/jni/x86/libidl_license.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/library_assets/debug/out/models/integrity_model_secret.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/library_assets/debug/out/models/quality_model_secret.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/library_jni/debug/jni/arm64-v8a/libidcard_quality.1.1.1.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/library_jni/debug/jni/arm64-v8a/libidl_license.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/library_jni/debug/jni/armeabi-v7a/libidcard_quality.1.1.1.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/library_jni/debug/jni/armeabi-v7a/libidl_license.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/library_jni/debug/jni/armeabi/libidcard_quality.1.1.1.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/library_jni/debug/jni/armeabi/libidl_license.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/library_jni/debug/jni/x86/libidcard_quality.1.1.1.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/library_jni/debug/jni/x86/libidl_license.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/library_manifest/debug/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/local_only_symbol_list/debug/R-def.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/merged_java_res/debug/out.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/merged_jni_libs/debug/out/arm64-v8a/libidcard_quality.1.1.1.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/merged_jni_libs/debug/out/arm64-v8a/libidl_license.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/merged_jni_libs/debug/out/armeabi-v7a/libidcard_quality.1.1.1.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/merged_jni_libs/debug/out/armeabi-v7a/libidl_license.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/merged_jni_libs/debug/out/armeabi/libidcard_quality.1.1.1.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/merged_jni_libs/debug/out/armeabi/libidl_license.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/merged_jni_libs/debug/out/x86/libidcard_quality.1.1.1.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/merged_jni_libs/debug/out/x86/libidl_license.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/merged_native_libs/debug/out/lib/arm64-v8a/libidcard_quality.1.1.1.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/merged_native_libs/debug/out/lib/arm64-v8a/libidl_license.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/merged_native_libs/debug/out/lib/armeabi-v7a/libidcard_quality.1.1.1.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/merged_native_libs/debug/out/lib/armeabi-v7a/libidl_license.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/merged_native_libs/debug/out/lib/armeabi/libidcard_quality.1.1.1.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/merged_native_libs/debug/out/lib/armeabi/libidl_license.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/merged_native_libs/debug/out/lib/x86/libidcard_quality.1.1.1.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/merged_native_libs/debug/out/lib/x86/libidl_license.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/navigation_json/debug/navigation.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/packaged_manifests/debug/output-metadata.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/packaged_res/debug/drawable-xhdpi-v4/bd_ocr_cancel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/packaged_res/debug/drawable-xhdpi-v4/bd_ocr_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/packaged_res/debug/drawable-xhdpi-v4/bd_ocr_confirm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/packaged_res/debug/drawable-xhdpi-v4/bd_ocr_gallery.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/packaged_res/debug/drawable-xhdpi-v4/bd_ocr_hint_align_bank_card.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/packaged_res/debug/drawable-xhdpi-v4/bd_ocr_hint_align_id_card.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/packaged_res/debug/drawable-xhdpi-v4/bd_ocr_hint_align_id_card_back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/packaged_res/debug/drawable-xhdpi-v4/bd_ocr_id_card_locator_back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/packaged_res/debug/drawable-xhdpi-v4/bd_ocr_id_card_locator_front.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/packaged_res/debug/drawable-xhdpi-v4/bd_ocr_light_off.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/packaged_res/debug/drawable-xhdpi-v4/bd_ocr_light_on.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/packaged_res/debug/drawable-xhdpi-v4/bd_ocr_passport_locator.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/packaged_res/debug/drawable-xhdpi-v4/bd_ocr_reset.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/packaged_res/debug/drawable-xhdpi-v4/bd_ocr_rotate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/packaged_res/debug/drawable-xhdpi-v4/bd_ocr_round_corner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/packaged_res/debug/drawable-xhdpi-v4/bd_ocr_take_photo_highlight.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/packaged_res/debug/drawable-xhdpi-v4/bd_ocr_take_photo_normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/packaged_res/debug/drawable-xhdpi-v4/bd_ocr_take_photo_selector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/packaged_res/debug/layout/bd_ocr_activity_camera.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/packaged_res/debug/layout/bd_ocr_confirm_result.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/packaged_res/debug/layout/bd_ocr_crop.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/packaged_res/debug/layout/bd_ocr_take_picture.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/packaged_res/debug/mipmap-hdpi-v4/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/packaged_res/debug/mipmap-mdpi-v4/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/packaged_res/debug/mipmap-xhdpi-v4/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/packaged_res/debug/mipmap-xxhdpi-v4/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/packaged_res/debug/mipmap-xxxhdpi-v4/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/packaged_res/debug/values/values.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/runtime_library_classes_jar/debug/classes.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/stripped_native_libs/debug/out/lib/arm64-v8a/libidcard_quality.1.1.1.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/stripped_native_libs/debug/out/lib/arm64-v8a/libidl_license.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/stripped_native_libs/debug/out/lib/armeabi-v7a/libidcard_quality.1.1.1.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/stripped_native_libs/debug/out/lib/armeabi-v7a/libidl_license.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/stripped_native_libs/debug/out/lib/armeabi/libidcard_quality.1.1.1.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/stripped_native_libs/debug/out/lib/armeabi/libidl_license.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/stripped_native_libs/debug/out/lib/x86/libidcard_quality.1.1.1.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/stripped_native_libs/debug/out/lib/x86/libidl_license.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/outputs/aar/ocr_ui-debug.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/build/tmp/compileDebugJavaWithJavac/source-classes-mapping.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/libs/license.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/assets/models/integrity_model_secret.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/assets/models/quality_model_secret.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/java/com/baidu/idcardquality/IDcardQualityProcess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/java/com/baidu/ocr/ui/camera/Camera1Control.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/java/com/baidu/ocr/ui/camera/Camera2Control.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/java/com/baidu/ocr/ui/camera/CameraActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/java/com/baidu/ocr/ui/camera/CameraNativeHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/java/com/baidu/ocr/ui/camera/CameraThreadPool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/java/com/baidu/ocr/ui/camera/CameraView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/java/com/baidu/ocr/ui/camera/ICameraControl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/java/com/baidu/ocr/ui/camera/MaskView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/java/com/baidu/ocr/ui/camera/OCRCameraLayout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/java/com/baidu/ocr/ui/camera/OCRFrameLayout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/java/com/baidu/ocr/ui/camera/PermissionCallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/java/com/baidu/ocr/ui/crop/CropView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/java/com/baidu/ocr/ui/crop/FrameOverlayView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/java/com/baidu/ocr/ui/util/DimensionUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/java/com/baidu/ocr/ui/util/ImageUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/jniLibs/arm64-v8a/libidcard_quality.1.1.1.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/jniLibs/arm64-v8a/libidl_license.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/jniLibs/armeabi-v7a/libidcard_quality.1.1.1.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/jniLibs/armeabi-v7a/libidl_license.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/jniLibs/armeabi/libidcard_quality.1.1.1.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/jniLibs/armeabi/libidl_license.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/jniLibs/x86/libidcard_quality.1.1.1.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/jniLibs/x86/libidl_license.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/drawable-xhdpi/bd_ocr_cancel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/drawable-xhdpi/bd_ocr_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/drawable-xhdpi/bd_ocr_confirm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/drawable-xhdpi/bd_ocr_gallery.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/drawable-xhdpi/bd_ocr_hint_align_bank_card.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/drawable-xhdpi/bd_ocr_hint_align_id_card.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/drawable-xhdpi/bd_ocr_hint_align_id_card_back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/drawable-xhdpi/bd_ocr_id_card_locator_back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/drawable-xhdpi/bd_ocr_id_card_locator_front.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/drawable-xhdpi/bd_ocr_light_off.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/drawable-xhdpi/bd_ocr_light_on.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/drawable-xhdpi/bd_ocr_passport_locator.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/drawable-xhdpi/bd_ocr_reset.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/drawable-xhdpi/bd_ocr_rotate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/drawable-xhdpi/bd_ocr_round_corner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/drawable-xhdpi/bd_ocr_take_photo_highlight.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/drawable-xhdpi/bd_ocr_take_photo_normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/drawable-xhdpi/bd_ocr_take_photo_selector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/layout/bd_ocr_activity_camera.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/layout/bd_ocr_confirm_result.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/layout/bd_ocr_crop.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/layout/bd_ocr_take_picture.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/values/bd_ocr_dimensions.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/values/bd_ocr_widgets.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocr_ui/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileContent/fileContent.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/classAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/jarAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/javaCompile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/taskHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__cjt_library_wheel_camera_1_1_9_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__cjt_library_wheel_camera_1_1_9_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_afollestad_material_dialogs_core_0_9_6_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_afollestad_material_dialogs_core_0_9_6_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_gifdecoder_4_8_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_gifdecoder_4_8_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_glide_4_8_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_glide_4_8_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_codbking_AllItemView_v1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_codbking_AllItemView_v1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jaeger_statusbaruitl_library_1_3_5_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jaeger_statusbaruitl_library_1_3_5_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_king_zxing_zxing_lite_1_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_king_zxing_zxing_lite_1_1_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_kyleduo_switchbutton_library_1_4_4_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_kyleduo_switchbutton_library_1_4_4_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_lqr_adapter_library_1_0_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_lqr_adapter_library_1_0_2_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_meizu_flyme_internet_push_internal_3_4_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_meizu_flyme_internet_push_internal_3_4_2_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__me_zhanghai_android_materialprogressbar_library_1_4_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__me_zhanghai_android_materialprogressbar_library_1_4_2_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_webrtc_google_webrtc_1_0_30039_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_webrtc_google_webrtc_1_0_30039_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/Hello1Application.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/Hello1Application.app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/hello1application/BottomActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/hello1application/BottomActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/hello1application/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/hello1application/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/hello1application/chat/BaseApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/hello1application/chat/BaseApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/hello1application/chat/main/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/hello1application/chat/main/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/hello1application/fragment/ManagementFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/hello1application/fragment/ManagementFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/main_bottom_navigation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/main_bottom_navigation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uikit/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/uikit/src/main/AndroidManifest.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Nexus_5X_API_30_x86]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -99,11 +444,19 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="ROOT_SYNC" value="DONT_SYNC" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="PUSH_TAGS">
-      <GitPushTagMode />
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="zealrussell &lt;1057021029@qq.com&gt;" />
+      </list>
     </option>
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="ProjectId" id="1tnUjDHawyUkHxF280KBepRkcML" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -116,12 +469,24 @@
   <component name="PropertiesComponent">
     <property name="ChangesTree.GroupingKeys" value="directory" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="android-custom-viewD:/Android/.gradle/caches/modules-2/files-2.1/com.google.android.material/material/1.3.0-alpha01/8f0718db5e578692a1550be5e09b851e47c48b09/material-1.3.0-alpha01-sources.jar!/com/google/android/material/bottomnavigation/BottomNavigationMenuView.java_SELECTED" value="BottomNavigationMenuView" />
+    <property name="android-custom-viewD:/Android/.gradle/caches/modules-2/files-2.1/com.google.android.material/material/1.3.0-alpha01/8f0718db5e578692a1550be5e09b851e47c48b09/material-1.3.0-alpha01-sources.jar!/com/google/android/material/bottomnavigation/BottomNavigationView.java_SELECTED" value="BottomNavigationView" />
+    <property name="android-custom-viewD:/Android/Sdk/sources/android-29/android/view/View.java_SELECTED" value="View" />
+    <property name="android-custom-viewF:/keyanxunlian/Hello1Application/app/src/main/java/com/example/hello1application/medical/quota/ruleViewDemo/RulerView.java_SELECTED" value="RulerView" />
+    <property name="android-custom-viewF:/keyanxunlian/Hello1Application/ocr_ui/src/main/java/com/baidu/ocr/ui/camera/CameraView.java_SELECTED" value="CameraView" />
+    <property name="android-custom-viewF:/keyanxunlian/Hello1Application/ocr_ui/src/main/java/com/baidu/ocr/ui/camera/MaskView.java_SELECTED" value="MaskView" />
     <property name="android.project.structure.last.selected" value="SDK Location" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="device.picker.selection" value="5660d429" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi" />
-    <property name="project.structure.last.edited" value="Dependencies" />
+    <property name="last_opened_file_path" value="D:/Desktop/aip-ocr-android-sdk-1.4.6/ocr_ui" />
+    <property name="multi-representation-previewD:/Android/.gradle/caches/modules-2/files-2.1/com.google.android.material/material/1.3.0-alpha01/8f0718db5e578692a1550be5e09b851e47c48b09/material-1.3.0-alpha01-sources.jar!/com/google/android/material/bottomnavigation/BottomNavigationMenuView.java_selected" value="Custom views" />
+    <property name="multi-representation-previewD:/Android/.gradle/caches/modules-2/files-2.1/com.google.android.material/material/1.3.0-alpha01/8f0718db5e578692a1550be5e09b851e47c48b09/material-1.3.0-alpha01-sources.jar!/com/google/android/material/bottomnavigation/BottomNavigationView.java_selected" value="Custom views" />
+    <property name="multi-representation-previewD:/Android/Sdk/sources/android-29/android/view/View.java_selected" value="Custom views" />
+    <property name="multi-representation-previewF:/keyanxunlian/Hello1Application/app/src/main/java/com/example/hello1application/medical/quota/ruleViewDemo/RulerView.java_selected" value="Custom views" />
+    <property name="multi-representation-previewF:/keyanxunlian/Hello1Application/ocr_ui/src/main/java/com/baidu/ocr/ui/camera/CameraView.java_selected" value="Custom views" />
+    <property name="multi-representation-previewF:/keyanxunlian/Hello1Application/ocr_ui/src/main/java/com/baidu/ocr/ui/camera/MaskView.java_selected" value="Custom views" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.16474465" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
@@ -133,11 +498,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\keyanxunlian\Hello1Application\app\src\main" />
+      <recent name="F:\keyanxunlian\Hello1Application\app\libs" />
       <recent name="F:\keyanxunlian\Hello1Application\app\src\main\res\mipmap-xxhdpi" />
       <recent name="F:\keyanxunlian\Hello1Application\app\src\main\res\layout" />
       <recent name="F:\keyanxunlian\Hello1Application\app\src\main\res\menu" />
-      <recent name="F:\keyanxunlian\Hello1Application\app\src\main\res\drawable" />
-      <recent name="F:\keyanxunlian\Hello1Application\app\src\main\res" />
     </key>
     <key name="android.template.packageName">
       <recent name="com.example.hello1application.medical.medicalRecord" />
@@ -145,6 +510,10 @@
       <recent name="com.example.hello1application.medical.medicalRecord.calculateDosage" />
       <recent name="com.example.hello1application.test.listenerAndCallback" />
       <recent name="com.example.hello1application.test" />
+    </key>
+    <key name="android.template.-1812862636">
+      <recent name="com.example.hello1application.medical.medicalRecord" />
+      <recent name="com.example.hello1application.medical" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\keyanxunlian\Hello1Application\app\libs" />
@@ -157,6 +526,7 @@
       <recent name="com.example.hello1application" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.hello1application.medical.medicalRecord" />
       <recent name="com.example.hello1application.common.pay" />
       <recent name="com.example.hello1application.common.http" />
       <recent name="com.example.hello1application.medical.quota.reportDetail" />
@@ -250,7 +620,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584177027661</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="第一次集成">
+      <created>1623423772862</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1623423772862</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers>
       <GitHub url="https://github.com">
         <option name="repoAuthor" value="WhiteSilencel" />
@@ -258,32 +635,48 @@
       </GitHub>
     </servers>
   </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="第一次集成" />
+    <MESSAGE value="ocr and im" />
+    <option name="LAST_COMMIT_MESSAGE" value="ocr and im" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="286" y="158" key="#PSD" timestamp="1623410779105">
+    <state x="286" y="158" key="#PSD" timestamp="1623505167229">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="286" y="158" key="#PSD/0.0.1536.824@0.0.1536.824" timestamp="1623410779105" />
-    <state x="367" y="0" key="CommitChangelistDialog2" timestamp="1623422045628">
+    <state x="286" y="158" key="#PSD/0.0.1536.824@0.0.1536.824" timestamp="1623505167229" />
+    <state x="511" y="279" width="548" height="273" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1625067147204">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="367" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1623422045628" />
-    <state x="547" y="152" key="FileChooserDialogImpl" timestamp="1623408503407">
+    <state x="511" y="279" width="548" height="273" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1625067147204" />
+    <state x="499" y="158" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1625062049427">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="547" y="152" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1623408503407" />
+    <state x="499" y="158" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1625062049427" />
+    <state x="367" y="0" key="CommitChangelistDialog2" timestamp="1625130991469">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="367" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1625130991469" />
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1625131033046">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1625131033046" />
+    <state x="547" y="152" key="FileChooserDialogImpl" timestamp="1625059712175">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="547" y="152" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1625059712175" />
     <state x="615" y="309" key="Github.ShareDialog" timestamp="1623422937612">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -292,22 +685,54 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="418" y="108" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1623422985329" />
+    <state width="1493" height="547" key="GridCell.Tab.0.bottom" timestamp="1625129355195">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="547" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1625129355195" />
+    <state width="1493" height="547" key="GridCell.Tab.0.center" timestamp="1625129355195">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="547" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1625129355195" />
+    <state width="1493" height="547" key="GridCell.Tab.0.left" timestamp="1625129355195">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="547" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1625129355195" />
+    <state width="1493" height="547" key="GridCell.Tab.0.right" timestamp="1625129355195">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="547" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1625129355195" />
+    <state width="1493" height="468" key="GridCell.Tab.1.bottom" timestamp="1623587025792">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="468" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1623587025792" />
+    <state width="1493" height="468" key="GridCell.Tab.1.center" timestamp="1623587025792">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="468" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1623587025792" />
+    <state width="1493" height="468" key="GridCell.Tab.1.left" timestamp="1623587025792">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="468" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1623587025792" />
+    <state width="1493" height="468" key="GridCell.Tab.1.right" timestamp="1623587025792">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="468" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1623587025792" />
     <state x="270" y="56" key="SettingsEditor" timestamp="1623422910076">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="56" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1623422910076" />
-    <state x="469" y="144" width="598" height="536" key="find.popup" timestamp="1623411335649">
+    <state x="469" y="144" width="727" height="536" key="find.popup" timestamp="1623586337305">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="469" y="144" width="598" height="536" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1623411335649" />
+    <state x="469" y="144" width="727" height="536" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1623586337305" />
     <state x="559" y="272" key="git4idea.rebase.GitRebaseDialog" timestamp="1623422091771">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="559" y="272" key="git4idea.rebase.GitRebaseDialog/0.0.1536.824@0.0.1536.824" timestamp="1623422091771" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1623414702776">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1625063206680">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1623414702776" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1625063206680" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -364,23 +789,63 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/hello1application/BottomActivity.java</url>
-          <line>40</line>
+          <line>42</line>
           <option name="timeStamp" value="118" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/hello1application/BottomActivity.java</url>
-          <line>39</line>
+          <line>41</line>
           <option name="timeStamp" value="119" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/hello1application/BottomActivity.java</url>
-          <line>35</line>
+          <line>37</line>
           <option name="timeStamp" value="122" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/hello1application/BottomActivity.java</url>
-          <line>34</line>
+          <line>36</line>
           <option name="timeStamp" value="123" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/hello1application/BottomActivity.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="124" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/hello1application/chat/main/SplashActivity.java</url>
+          <line>116</line>
+          <option name="timeStamp" value="125" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/hello1application/chat/main/SplashActivity.java</url>
+          <line>118</line>
+          <option name="timeStamp" value="126" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/hello1application/chat/main/SplashActivity.java</url>
+          <line>133</line>
+          <option name="timeStamp" value="127" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/hello1application/chat/main/SplashActivity.java</url>
+          <line>134</line>
+          <option name="timeStamp" value="128" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/hello1application/chat/main/SplashActivity.java</url>
+          <line>135</line>
+          <option name="timeStamp" value="129" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/hello1application/chat/main/SplashActivity.java</url>
+          <line>136</line>
+          <option name="timeStamp" value="130" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/hello1application/chat/BaseApp.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="131" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/hello1application/medical/medicalRecord/record/PostMedicalRecordActivity.java</url>

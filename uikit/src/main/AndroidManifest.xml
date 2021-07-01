@@ -217,17 +217,23 @@
             android:name=".conversation.file.FileRecordActivity"
             android:label="文件记录" />
 
-        <!--moment start-->
-        <activity android:name="cn.wildfire.chat.moment.PublishFeedActivity" />
-        <activity android:name="cn.wildfire.chat.moment.FeedMessageActivity" />
-        <activity android:name="cn.wildfire.chat.moment.FeedDetailActivity" />
-        <activity android:name="cn.wildfire.chat.moment.FeedListActivity">
-            <intent-filter>
-                <action android:name="${packageName}.moment" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity android:name="cn.wildfire.chat.moment.FeedVisibleScopeActivity" />
+<!--        &lt;!&ndash;moment start&ndash;&gt;-->
+<!--        <activity android:name="cn.wildfire.chat.moment.PublishFeedActivity"-->
+<!--            tools:ignore="MissingClass" />-->
+<!--        <activity android:name="cn.wildfire.chat.moment.FeedMessageActivity"-->
+<!--            tools:ignore="MissingClass" />-->
+<!--        <activity android:name="cn.wildfire.chat.moment.FeedDetailActivity"-->
+<!--            tools:ignore="MissingClass" />-->
+<!--        <activity android:name="cn.wildfire.chat.moment.FeedListActivity"-->
+<!--            tools:ignore="MissingClass">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="${packageName}.moment" />-->
+<!--                <category android:name="android.intent.category.DEFAULT" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+<!--        <activity android:name="cn.wildfire.chat.moment.FeedVisibleScopeActivity"-->
+<!--            tools:ignore="MissingClass" />-->
+
         <activity android:name=".group.manage.MuteGroupMemberActivity" />
         <activity
             android:name=".contact.ContactListActivity"

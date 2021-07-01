@@ -1,7 +1,9 @@
 package com.example.hello1application;
 
+import android.content.Intent;
 import android.os.Bundle;
 
+import com.example.hello1application.chat.main.SplashActivity;
 import com.example.hello1application.fragment.HomeFragment;
 import com.example.hello1application.fragment.ManagementFragment;
 import com.example.hello1application.fragment.MessageFragment;
@@ -42,8 +44,11 @@ public class BottomActivity extends AppCompatActivity{
                     return true;
 
                 case R.id.navigation_notifications:
-                    initFragment(fragmentTransaction);
-                    setMessageFragment(fragmentTransaction);
+                    //initFragment(fragmentTransaction);
+                    //setMessageFragment(fragmentTransaction);
+                    Intent intent = new Intent(); //从 A类 跳转到 B类
+                    intent.setClass(BottomActivity.this, SplashActivity.class);
+                    startActivity(intent);
                     return true;
 
                 case R.id.navigation_personalCenter:

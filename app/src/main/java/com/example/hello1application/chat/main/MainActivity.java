@@ -29,6 +29,7 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
+import com.example.hello1application.BottomActivity;
 import com.example.hello1application.R;
 import com.google.android.material.bottomnavigation.BottomNavigationMenuView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -267,7 +268,7 @@ public class MainActivity extends WfcBaseActivity implements ViewPager.OnPageCha
         MeFragment meFragment = new MeFragment();
         mFragmentList.add(conversationListFragment);
         mFragmentList.add(contactListFragment);
-//        mFragmentList.add(discoveryFragment);
+//       mFragmentList.add(discoveryFragment);
         mFragmentList.add(meFragment);
         contentViewPager.setAdapter(new HomeFragmentPagerAdapter(getSupportFragmentManager(), mFragmentList));
         contentViewPager.setOnPageChangeListener(this);
@@ -288,13 +289,19 @@ public class MainActivity extends WfcBaseActivity implements ViewPager.OnPageCha
                         setTitleBackgroundResource(R.color.gray5, false);
                     }
                     break;
-//                case R.id.discovery:
-//                    contentViewPager.setCurrentItem(2);
-//                    setTitle("发现");
-//                    if (!isDarkTheme()) {
-//                        setTitleBackgroundResource(R.color.gray5, false);
-//                    }
-//                    break;
+
+               //6.13添加一个返回到医疗主页
+               case R.id.discovery:
+                   Intent intent = new Intent(); //从 A类 跳转到 B类
+                   intent.setClass(MainActivity.this, BottomActivity.class);
+                   startActivity(intent);
+//                   contentViewPager.setCurrentItem(2);
+//                   setTitle("主页");
+//                   if (!isDarkTheme()) {
+//                       setTitleBackgroundResource(R.color.gray5, false);
+//                   }
+                   break;
+
                 case R.id.me:
                     contentViewPager.setCurrentItem(3);
                     setTitle("个人");
@@ -318,6 +325,14 @@ public class MainActivity extends WfcBaseActivity implements ViewPager.OnPageCha
             case R.id.chat:
                 createConversation();
                 break;
+
+                //6.13 自定义了一个返回
+            case R.id.discovery:
+                Intent intent = new Intent(); //从 A类 跳转到 B类
+                intent.setClass(MainActivity.this, BottomActivity.class);
+                startActivity(intent);
+                break;
+
             case R.id.add_contact:
                 searchUser();
                 break;

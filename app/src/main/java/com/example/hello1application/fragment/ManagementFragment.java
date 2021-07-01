@@ -1,6 +1,5 @@
 package com.example.hello1application.fragment;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,6 +13,7 @@ import androidx.fragment.app.Fragment;
 
 import com.example.hello1application.R;
 import com.example.hello1application.medical.BasicInfoActivity;
+import com.example.hello1application.OCRActivity;
 import com.example.hello1application.medical.medicalRecord.PreMedicalActivity;
 import com.example.hello1application.medical.medicalRecord.TestActivity;
 import com.example.hello1application.medical.medicalRecord.calculateDosage.DosageReviewActivity;
@@ -107,10 +107,11 @@ public class ManagementFragment extends Fragment implements View.OnClickListener
                 intent = new Intent(getActivity(), TestActivity.class);
                 startActivity(intent);
                 break;
-//            case R.id.layout_resourceDB:
-//                intent = new Intent(getActivity(),BasicInfoActivity.class);
-//                startActivity(intent);
-//                break;
+                //ocr部分
+            case R.id.layout_resourceDB:
+                intent = new Intent(getActivity(), OCRActivity.class);
+                startActivity(intent);
+                break;
         }
     }
 }
