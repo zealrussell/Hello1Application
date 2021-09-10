@@ -14,8 +14,6 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.afollestad.materialdialogs.MaterialDialog;
-import com.example.hello1application.chat.AppService;
-import com.example.hello1application.chat.MainActivity;
 import com.example.hello1application.R;
 import com.example.hello1application.chat.login.model.LoginResult;
 
@@ -49,20 +47,12 @@ public class LoginActivity extends WfcBaseActivity {
 
     @OnTextChanged(value = R.id.accountEditText, callback = OnTextChanged.Callback.AFTER_TEXT_CHANGED)
     void inputAccount(Editable editable) {
-        if (!TextUtils.isEmpty(passwordEditText.getText()) && !TextUtils.isEmpty(editable)) {
-            loginButton.setEnabled(true);
-        } else {
-            loginButton.setEnabled(false);
-        }
+        loginButton.setEnabled(!TextUtils.isEmpty(passwordEditText.getText()) && !TextUtils.isEmpty(editable));
     }
 
     @OnTextChanged(value = R.id.passwordEditText, callback = OnTextChanged.Callback.AFTER_TEXT_CHANGED)
     void inputPassword(Editable editable) {
-        if (!TextUtils.isEmpty(accountEditText.getText()) && !TextUtils.isEmpty(editable)) {
-            loginButton.setEnabled(true);
-        } else {
-            loginButton.setEnabled(false);
-        }
+        loginButton.setEnabled(!TextUtils.isEmpty(accountEditText.getText()) && !TextUtils.isEmpty(editable));
     }
 
 
@@ -93,7 +83,7 @@ public class LoginActivity extends WfcBaseActivity {
                     .putString("id", loginResult.getUserId())
                     .putString("token", loginResult.getToken())
                     .apply();
-                Intent intent = new Intent(LoginActivity.this,com.example.hello1application.chat.MainActivity.class);
+                Intent intent = new Intent(LoginActivity.this,com.example.hello1application.chat.main.MainActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);
                 dialog.dismiss();

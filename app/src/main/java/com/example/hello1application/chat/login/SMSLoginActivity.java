@@ -15,8 +15,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.afollestad.materialdialogs.MaterialDialog;
-import com.example.hello1application.chat.AppService;
-import com.example.hello1application.chat.MainActivity;
 import com.example.hello1application.R;
 import com.example.hello1application.chat.login.model.LoginResult;
 
@@ -95,7 +93,7 @@ public class SMSLoginActivity extends WfcBaseNoToolbarActivity {
                     .putString("id", loginResult.getUserId())
                     .putString("token", loginResult.getToken())
                     .apply();
-                Intent intent = new Intent(com.example.hello1application.chat.login.SMSLoginActivity.this, com.example.hello1application.chat.MainActivity.class);
+                Intent intent = new Intent(com.example.hello1application.chat.login.SMSLoginActivity.this, com.example.hello1application.chat.main.MainActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);
                 finish();
@@ -113,7 +111,7 @@ public class SMSLoginActivity extends WfcBaseNoToolbarActivity {
         });
     }
 
-    private Handler handler = new Handler();
+    private final Handler handler = new Handler();
 
     @OnClick(R.id.requestAuthCodeButton)
     void requestAuthCode() {

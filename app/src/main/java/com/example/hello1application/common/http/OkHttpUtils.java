@@ -4,9 +4,13 @@ import com.google.gson.GsonBuilder;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
+import java.security.cert.CertificateException;
+import java.security.cert.X509Certificate;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
+
+import javax.net.ssl.X509TrustManager;
 
 import okhttp3.Call;
 import okhttp3.FormBody;
@@ -21,8 +25,8 @@ public class OkHttpUtils {
 
     private static final long DEFAULT_MILLISECONDS = 10L;
     private volatile static OkHttpUtils mInstance;
-    private OkHttpClient mOkHttpClient;
-    private static Gson gson;
+    private final OkHttpClient mOkHttpClient;
+    private static final Gson gson;
 
     static {
         GsonBuilder builder = new GsonBuilder();
@@ -45,7 +49,18 @@ public class OkHttpUtils {
             mOkHttpClient = new OkHttpClient.Builder()
                     .connectTimeout(DEFAULT_MILLISECONDS, TimeUnit.SECONDS)
                     .readTimeout(DEFAULT_MILLISECONDS, TimeUnit.SECONDS)
-                    .sslSocketFactory(SSLSocketClient.getSSLSocketFactory())//配置
+                    .sslSocketFactory(SSLSocketClient.getSSLSocketFactory(),new X509TrustManager() {
+                        @Override
+                        public void checkClientTrusted(X509Certificate[] x509Certificates, String s) throws CertificateException {
+                        }
+                        @Override
+                        public void checkServerTrusted(X509Certificate[] x509Certificates, String s) throws CertificateException {
+                        }
+                        @Override
+                        public X509Certificate[] getAcceptedIssuers() {
+                            return new X509Certificate[0];
+                        }
+                    })//配置
                     .hostnameVerifier(SSLSocketClient.getHostnameVerifier())//配置
                     .build();
         } else {
