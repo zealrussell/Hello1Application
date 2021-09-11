@@ -63,7 +63,8 @@
             android:theme="@style/FullscreenTheme" />
         <activity
             android:name=".BottomActivity"
-            android:label="@string/title_activity_bottom">
+            >
+<!--            android:label="@string/title_activity_bottom">-->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -5,7 +5,7 @@
     <item
         android:id="@+id/conversation_list"
         android:icon="@drawable/bottom_conversation_menu_selector"
-        android:title="交流平台"
+        android:title="消息"
         app:showAsAction="never" />
     <item
         android:id="@+id/contact"
@@ -15,11 +15,11 @@
     <item
         android:id="@+id/discovery"
         android:icon="@drawable/bottom_discovery_menu_selector"
-        android:title="发现" />
+        android:title="主页" />
 
     <item
         android:id="@+id/me"
         android:icon="@drawable/bottom_me_menu_selector"
-        android:title="个人" />
+        android:title="我" />
 
 </menu>

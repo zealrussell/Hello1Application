@@ -74,7 +74,7 @@ import q.rorbin.badgeview.QBadgeView;
 
 public class MainActivity extends WfcBaseActivity implements ViewPager.OnPageChangeListener {
 
-    private List<Fragment> mFragmentList = new ArrayList<>(4);
+    private final List<Fragment> mFragmentList = new ArrayList<>(4);
 
     @BindView(R.id.bottomNavigationView)
     BottomNavigationView bottomNavigationView;
@@ -99,7 +99,7 @@ public class MainActivity extends WfcBaseActivity implements ViewPager.OnPageCha
     private ContactViewModel contactViewModel;
     private ConversationListViewModel conversationListViewModel;
 
-    private Observer<Boolean> imStatusLiveDataObserver = status -> {
+    private final Observer<Boolean> imStatusLiveDataObserver = status -> {
         if (status && !isInitialized) {
             init();
             isInitialized = true;
@@ -254,7 +254,8 @@ public class MainActivity extends WfcBaseActivity implements ViewPager.OnPageCha
     }
 
     private void initView() {
-        setTitle(getString(R.string.app_name));
+        setTitle("患者端");
+        // setTitle(getString(R.string.app_name));
 
         startingTextView.setVisibility(View.GONE);
         contentLinearLayout.setVisibility(View.VISIBLE);
@@ -277,7 +278,7 @@ public class MainActivity extends WfcBaseActivity implements ViewPager.OnPageCha
             switch (item.getItemId()) {
                 case R.id.conversation_list:
                     contentViewPager.setCurrentItem(0);
-                    setTitle("交流平台");
+                    setTitle("交流");
                     if (!isDarkTheme()) {
                         setTitleBackgroundResource(R.color.gray5, false);
                     }
@@ -292,6 +293,7 @@ public class MainActivity extends WfcBaseActivity implements ViewPager.OnPageCha
 
                //6.13添加一个返回到医疗主页
                case R.id.discovery:
+                   setTitle("主页");
                    Intent intent = new Intent(); //从 A类 跳转到 B类
                    intent.setClass(MainActivity.this, BottomActivity.class);
                    startActivity(intent);
@@ -393,12 +395,8 @@ public class MainActivity extends WfcBaseActivity implements ViewPager.OnPageCha
 
     @Override
     public void onPageScrollStateChanged(int state) {
-        if (state != ViewPager.SCROLL_STATE_IDLE) {
-            //滚动过程中隐藏快速导航条
-            contactListFragment.showQuickIndexBar(false);
-        } else {
-            contactListFragment.showQuickIndexBar(true);
-        }
+        //滚动过程中隐藏快速导航条
+        contactListFragment.showQuickIndexBar(state == ViewPager.SCROLL_STATE_IDLE);
     }
 
     @Override

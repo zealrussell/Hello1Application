@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Hello1Application</string>
+    <string name="app_name">健康管理系统</string>
     <string name="tnm_T">T 最大肿瘤大小（）cm：</string>
     <string name="radio_tnm_t1">T1：肿瘤局限在甲状腺内，最大径≤2cm</string>
     <string name="confirm">确定</string>
