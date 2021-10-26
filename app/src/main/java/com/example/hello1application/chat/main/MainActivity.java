@@ -254,7 +254,7 @@ public class MainActivity extends WfcBaseActivity implements ViewPager.OnPageCha
     }
 
     private void initView() {
-        setTitle("患者端");
+        setTitle("医生端");
         // setTitle(getString(R.string.app_name));
 
         startingTextView.setVisibility(View.GONE);
@@ -274,11 +274,12 @@ public class MainActivity extends WfcBaseActivity implements ViewPager.OnPageCha
         contentViewPager.setAdapter(new HomeFragmentPagerAdapter(getSupportFragmentManager(), mFragmentList));
         contentViewPager.setOnPageChangeListener(this);
 
+        // TODO: 2021/9/12 将标题换成医生端 
         bottomNavigationView.setOnNavigationItemSelectedListener(item -> {
             switch (item.getItemId()) {
                 case R.id.conversation_list:
                     contentViewPager.setCurrentItem(0);
-                    setTitle("交流");
+                    setTitle("医生端");
                     if (!isDarkTheme()) {
                         setTitleBackgroundResource(R.color.gray5, false);
                     }
