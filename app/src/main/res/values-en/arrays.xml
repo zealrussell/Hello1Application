@@ -1,0 +1,25 @@
+<resources>
+    <string-array name="index_unit_select">
+        <item>IU/L</item>
+        <item>IU/ml</item>
+        <item>mIU/L(mU/L)</item><!--TSH表上的标准单位-->
+        <item>pmol/L</item>
+        <item>pg/mL</item>
+        <item>ug/L</item>
+        <item>uIU/mL</item>
+        <item>uIU/L</item>
+
+
+        <!--
+        <item>mIU/ml</item>
+        <item>nmol/L</item>
+        <item>ng/dL</item>
+        <item>ng/mL</item>
+        <item>uIU/IL</item>
+        <item>U/L</item>
+        <item>kU/L</item>
+        <item>g/L</item>
+        <item>ug/dL</item>
+        -->
+    </string-array>
+</resources>

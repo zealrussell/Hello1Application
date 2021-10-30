@@ -1,23 +1,46 @@
 <resources>
     <string name="app_name">健康管理系统</string>
+
     <string name="tnm_T">T 最大肿瘤大小（）cm：</string>
     <string name="radio_tnm_t1">T1：肿瘤局限在甲状腺内，最大径≤2cm</string>
-    <string name="confirm">确定</string>
-    <string name="cancel">取消</string>
 
-    <string name="title_activity_bottom">BottomActivity</string>
     <string name="title_home">订单</string>
     <string name="title_dashboard">管家</string>
     <string name="title_notifications">消息</string>
     <string name="title_personalCental">我</string>
-    <string name="title_homepage">主页</string>
 
     <string name="title_activity_fullscreen">FullscreenActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
 
     <string name="tttttt">促甲状腺素</string>
-    <string name="ttt">偏高</string>
+
+
+    <!--页面名称-->
+    <string name="fragment_name">甲状腺管理</string>
+
+    <!-- fragment_management -->
+    <string name="mng_personalInfo">个人信息</string>
+    <string name="mng_pre_operation_record">术前记录</string>
+    <string name="mng_post_operation_record">术后记录</string>
+    <string name="mng_index_record">指标记录</string>
+    <string name="mng_resourceDB">资料库(病历、彩超上传)</string>
+    <string name="mng_review_ablationOfBenignNodules">甲状腺良性结节消融术后复查专区</string>
+    <string name="mng_drugDosage_review">用药与复查报告</string>
+    <string name="mng_copyright">甲优美 © 南京理工大学 · 郑州大学第一附属医院</string>
+    <!-- fragment_home -->
+    <string name="od_order">订单页面</string>
+    <string name="od_product_info">产品信息：</string>
+    <string name="od_subject">甲状腺治疗方案</string>
+    <string name="od_product_name">产品名称：</string>
+    <string name="od_instruction">用药指导</string>
+    <string name="od_product_lastingtime">产品时效：</string>
+    <string name="od_lastingtime">一年</string>
+    <string name="od_product_price">产品价格(元)：</string>
+    <string name="od_price">50.00</string>
+    <string name="od_product_code">产品编码：</string>
+    <string name="od_code">DRUG_DIRECTION</string>
+    <string name="od_confirm">确认</string>
 
     <!--DTC复发风险层-->
     <string name="dtc_lowSick1">① 无局部或远处转移</string>
@@ -58,10 +81,6 @@
     <string name="sideEffect_highRisk4">⑳ 伴发其他严重疾病</string>
 
     <string name="title_activity_login">Sign in</string>
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
     <string name="welcome">"Welcome !"</string>
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
@@ -78,7 +97,6 @@
     <string name="matter_attention8">• 妊娠期间切不可盲目停药</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
     <!-- wfc -->
@@ -89,15 +107,11 @@
     <string name="setting">设置</string>
 
     <!--设置-->
-    <string name="new_message_remind">新消息提醒</string>
     <string name="exit">退出登录</string>
 
     <!--关于-->
     <string name="app_name_in_about">在线问诊系统</string>
     <string name="function_introduction">功能介绍</string>
-    <string name="complaint">投诉</string>
-    <string name="check_update">检查更新</string>
-    <string name="terms_of_use_and_privacy_policy">使用条款和隐私政策</string>
 
     <!--splash页面内容-->
     <string name="name">在线问诊</string>

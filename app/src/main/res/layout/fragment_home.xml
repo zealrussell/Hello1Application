@@ -16,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="75dp"
         android:gravity="center"
-        android:text="订单页面"
+        android:text="@string/od_order"
         android:textColor="#FFFFFF"
         android:background="#3da8f5"
         android:textSize="26sp" />
@@ -39,7 +39,7 @@
         <TextView
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="产品信息:" />
+            android:text="@string/od_product_info" />
 
         <ImageView
             android:layout_width="64dp"
@@ -53,7 +53,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:gravity="center_vertical"
-            android:text="甲状腺治疗方案" />
+            android:text="@string/od_subject" />
 
     </LinearLayout>
 
@@ -72,7 +72,7 @@
             android:layout_width="100dp"
             android:layout_height="32dp"
             android:gravity="center_vertical"
-            android:text="产品名称:" />
+            android:text="@string/od_product_name" />
 
         <TextView
             android:id="@+id/order_body"
@@ -80,7 +80,7 @@
             android:layout_height="32dp"
             android:layout_marginStart="16dp"
             android:gravity="center_vertical"
-            android:text="用药指导" />
+            android:text="@string/od_instruction" />
     </LinearLayout>
 
     <View
@@ -98,7 +98,7 @@
             android:layout_width="100dp"
             android:layout_height="32dp"
             android:gravity="center_vertical"
-            android:text="产品时效:" />
+            android:text="@string/od_product_lastingtime" />
 
         <TextView
             android:id="@+id/goods_number"
@@ -106,7 +106,7 @@
             android:layout_height="32dp"
             android:layout_marginStart="16dp"
             android:gravity="center_vertical"
-            android:text="一年" />
+            android:text="@string/od_lastingtime" />
     </LinearLayout>
 
     <View
@@ -124,7 +124,7 @@
             android:layout_width="100dp"
             android:layout_height="32dp"
             android:gravity="center_vertical"
-            android:text="产品价格(元):" />
+            android:text="@string/od_product_price" />
 
         <TextView
             android:id="@+id/goods_money"
@@ -133,7 +133,7 @@
             android:layout_marginStart="16dp"
             android:layout_weight="1"
             android:gravity="center_vertical"
-            android:text="50.00" />
+            android:text="@string/od_price" />
 
     </LinearLayout>
 
@@ -152,7 +152,7 @@
             android:layout_width="100dp"
             android:layout_height="32dp"
             android:gravity="center_vertical"
-            android:text="产品编码:" />
+            android:text="@string/od_product_code" />
 
         <TextView
             android:id="@+id/goods_productCode"
@@ -161,7 +161,7 @@
             android:layout_marginStart="16dp"
             android:layout_weight="1"
             android:gravity="center_vertical"
-            android:text="DRUG_DIRECTION" />
+            android:text="@string/od_code" />
 
     </LinearLayout>
 
@@ -178,6 +178,6 @@
         android:layout_marginTop="70dp"
         android:layout_marginRight="16dp"
         android:background="#3da8f5"
-        android:text="确定"
+        android:text="@string/od_confirm"
         android:textColor="@android:color/white" />
 </LinearLayout>

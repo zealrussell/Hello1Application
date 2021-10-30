@@ -44,6 +44,8 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 29 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.multidex:multidex-instrumentation:2.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.multidex:multidex:2.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: ./uikit/libs/joda-time-2.5-sources.jar" level="project" />
     <orderEntry type="library" name="Gradle: ./uikit/libs/joda-time-2.5.jar" level="project" />
     <orderEntry type="library" name="Gradle: ./uikit/libs/pinyin4j-2.5.0.jar" level="project" />
@@ -119,8 +121,6 @@
     <orderEntry type="library" name="Gradle: com.google.android:flexbox:2.0.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.tencent.map.geolocation:TencentLocationSdk-openplatform:7.2.6@aar" level="project" />
     <orderEntry type="library" name="Gradle: artifacts:mars-core-release:unspecified" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: androidx.multidex:multidex-instrumentation:2.0.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: androidx.multidex:multidex:2.0.0@aar" level="project" />
     <orderEntry type="module" module-name="Hello1Application.client" />
     <orderEntry type="module" module-name="Hello1Application.emojilibrary" />
     <orderEntry type="module" module-name="Hello1Application.imagepicker" />

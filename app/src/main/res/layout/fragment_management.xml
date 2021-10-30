@@ -41,7 +41,7 @@
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="个人信息"/>
+                android:text="@string/mng_personalInfo"/>
         </LinearLayout>
 
         <TextView
@@ -70,7 +70,7 @@
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="术前记录"/>
+                android:text="@string/mng_pre_operation_record"/>
         </LinearLayout>
 
         <TextView
@@ -104,7 +104,7 @@
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="术后记录"/>
+                android:text="@string/mng_post_operation_record"/>
         </LinearLayout>
 
 
@@ -130,7 +130,7 @@
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="指标记录"/>
+                android:text="@string/mng_index_record"/>
         </LinearLayout>
 
 
@@ -160,7 +160,7 @@
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="资料库（病历、彩超上传）"/>
+                android:text="@string/mng_resourceDB"/>
         </LinearLayout>
 
 
@@ -186,7 +186,7 @@
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="甲状腺良性结节消融术后复查专区"/>
+                android:text="@string/mng_review_ablationOfBenignNodules"/>
         </LinearLayout>
 
         <LinearLayout
@@ -211,7 +211,7 @@
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="用药与复查报告"/>
+                android:text="@string/mng_drugDosage_review"/>
         </LinearLayout>
 
 
@@ -228,7 +228,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_gravity="center_horizontal"
                 android:gravity="center"
-                android:text="甲优美 © 南京理工大学 · 郑州大学第一附属医院"
+                android:text="@string/mng_copyright"
                 android:textSize="15sp"
                 />
         </RelativeLayout>

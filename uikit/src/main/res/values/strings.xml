@@ -15,12 +15,10 @@
     <string name="no_recommend_friend">还没有推荐的朋友</string>
 
     <!--搜索用户-->
-    <string name="user_no_found">该用户不存在</string>
     <string name="search">搜索</string>
 
     <!--用户信息-->
     <string name="nickname_colon">昵称:%1$s</string>
-    <string name="set_alias_and_tag">设置备注和标签</string>
     <string name="send_message">发消息</string>
     <string name="add_to_contact">添加到通讯录</string>
     <string name="change_my_name_tip">好名字可以让你的朋友 更容易记住你。</string>

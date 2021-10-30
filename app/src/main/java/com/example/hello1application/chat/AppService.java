@@ -49,7 +49,6 @@ public class AppService implements AppServiceProvider {
     public static String APP_SERVER_ADDRESS/*请仔细阅读上面的注释*/ = "http://101.133.166.127:8888";
 
     private AppService() {
-
     }
 
     public static com.example.hello1application.chat.AppService Instance() {
